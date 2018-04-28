@@ -1,0 +1,168 @@
+:root{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+body,html{
+	height: 100%;
+}
+
+body {
+	background-color: #F3F5E9;
+    margin: 0;
+    padding: 0;
+}
+.row-title{
+	background-color: #232323;
+	height: 15%;
+	position: relative;
+	display: flex;
+    flex-direction: row;
+}
+#title{
+	margin: 0;
+	font-size: 2.5rem;
+	color: #FFFAFA;
+	position: absolute;
+	top:50%;
+	transform: translate(20%,-50%);
+}
+.row-container-about-me,.row-container-technologies-title,.row-container-professinal_experiance,.row-container-projects-title{
+	margin-top: 6vh;
+	background-color: #C9CFA8;
+	height:10%;
+	position: relative;
+	display: flex;
+    flex-direction: row;
+}
+#about-me,#technologies-title,#professional-experiance-title,#projects-title{
+	margin:0;
+	font-size: 2.3rem;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%,-50%);
+
+}
+
+.row-container-about-me-information,.row-container-technologies{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6vh;
+}
+.content-about-me,.row-container-pe-details,.row-projects-info{
+	margin: 2;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3rem;
+	text-align: justify;
+	padding: 0 1vw 0 1vw;
+}
+.row-projects-info{
+	margin-bottom: 6vh;
+}
+.row-container-about-me-information .my-image{
+    border: 1px solid #35eea4;
+    border-radius: 5px;
+    width: 45vw;
+}
+.row-container-technologies .technology-icon{
+	width: 10vw;
+    margin-left: 1.3vw;
+    margin-right: 5vw;
+    text-align: center;
+    margin-bottom: 1vw;	
+}
+.row-container-technologies{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6vh;	
+}
+
+
+@media screen and (max-width: 800px){
+
+		 #title{
+		 	font-size: 2.5rem;
+		 }
+		 #about-me,#technologies-title,#professional-experiance-title,#projects-title{
+			font-size: 2.3rem;	 	
+		 }
+		 .row-container-about-me-information {
+        	flex-direction: column;
+         }
+		 .row-container-about-me-information .image {
+		    order: -1;
+		 }
+		 .row-container-about-me-information .my-image {
+		     width: 45vw;
+		 }
+		 .row-container-technologies {
+        	flex-direction: column;
+         }
+         .row-container-technologies .technology-icon
+			{
+				width: 15vw;
+			    text-align: center;
+			    margin-bottom: 5vw;	
+			}
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+	#title{
+ 		font-size: 2rem;
+ 	}
+	 #about-me,#technologies-title,#professional-experiance-title,#projects-title{
+		font-size: 1.8rem;	 	
+	 }
+	 .row-container-about-me-information .my-image {
+		     width: 55vw;
+	}
+
+	.row-container-technologies .technology-icon
+	{
+			width: 15vw;
+		    text-align: center;
+		    margin-bottom: 5vw;	
+	}
+ 
+}
+
+@media screen and (min-width: 220px) and (max-width: 479px) {
+
+	#title{
+ 			font-size: 1.5rem;
+ 	}
+ 	#about-me,#technologies-title,#professional-experiance-title,#projects-title{
+			font-size: 1.4rem;	 	
+	}
+ 	.row-container-about-me-information .my-image {
+	    	width: 60vw;
+	}
+	.row-container-technologies .technology-icon
+	{
+			width: 25vw;
+		    text-align: center;
+		    margin-bottom: 5vw;	
+	}
+}
+ @media screen and (min-width: 50px) and (max-width: 219px) {
+
+ 		#title{
+ 				font-size: 0.8rem;
+ 		}
+  	 	#about-me,#technologies-title,#professional-experiance-title,#projects-title{
+				font-size: 0.7rem;	 	
+	 	}
+	 	.row-container-about-me-information .my-image {
+		    	width: 75vw;
+		}
+		.row-container-technologies .technology-icon
+		{
+				width: 20vw;
+				text-align: center;
+				margin-bottom: 5vw;	
+		}
+ }
